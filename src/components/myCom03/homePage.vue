@@ -7,6 +7,7 @@
       <el-menu-item index="4">作品</el-menu-item>
       <el-menu-item index="5">联系我</el-menu-item>
     </el-menu>
+
   </div>
 </template>
 <script>
@@ -25,7 +26,12 @@
   }
 </script>
 <style scoped>
+  .home{
+
+  }
   .el-menu{
+    display: flex;
+    justify-content: flex-end;
     background-color: #2c3e50 !important;
     border-radius:0 !important;
   }
