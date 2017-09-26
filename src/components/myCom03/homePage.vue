@@ -1,9 +1,11 @@
 <template>
   <div class="home">
     <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-      <el-menu-item index="1">处理中心</el-menu-item>
-      <el-menu-item index="2">我的工作台</el-menu-item>
-      <el-menu-item index="3">订单管理</el-menu-item>
+      <el-menu-item index="1">关于我</el-menu-item>
+      <el-menu-item index="2">技术栈</el-menu-item>
+      <el-menu-item index="3">经历</el-menu-item>
+      <el-menu-item index="4">作品</el-menu-item>
+      <el-menu-item index="5">联系我</el-menu-item>
     </el-menu>
   </div>
 </template>
