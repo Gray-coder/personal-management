@@ -26,11 +26,9 @@
   }
 </script>
 <style scoped>
-  .home {
-
-  }
-  .home-content{
-
+  .home,.home-content {
+    width: 100%;
+    height:100%;
   }
   .el-menu {
     display: flex;
