@@ -14,6 +14,11 @@ import myCom022 from '../components/myCom02/myCom022.vue'
 import myCom023 from '../components/myCom02/myCom023.vue'
 
 import homePage from '../components/myCom03/homePage.vue'
+import aboutMe from '../components/myCom03/homePageItems/about-me.vue'
+import mySkills from '../components/myCom03/homePageItems/my-skills.vue'
+import workExperience from '../components/myCom03/homePageItems/work-experience.vue'
+import myWorks from '../components/myCom03/homePageItems/my-works.vue'
+import contactMe from '../components/myCom03/homePageItems/contact-me.vue'
 
 const routes = [
   {
@@ -29,7 +34,48 @@ const routes = [
     iconType: 'fa fa-home',
     leaf: true,
     children: [
-      {path: '/homePage', component: homePage, name: '首页'},
+      {
+        path: '/homePage',
+        component: homePage,
+        name: '首页',
+        children:[
+          {
+            path: '/about-me',
+            component: aboutMe,
+            name: '关于我',
+            iconType: 'fa fa-user-circle',
+          },
+          {
+            path: '/my-skills',
+            component: mySkills,
+            name: '技术栈',
+            iconType: 'fa fa-wrench',
+          },
+          {
+            path: '/work-experience',
+            component: workExperience,
+            name: '经历',
+            iconType: 'fa fa-file-text-o',
+          },
+          {
+            path: '/my-works',
+            component: myWorks,
+            name: '作品',
+            iconType: 'fa fa-bars',
+          },
+          {
+            path: '/contact-me',
+            component: contactMe,
+            name: '联系我',
+            iconType: 'fa fa-envelope',
+          },
+          {
+            path: '/homePage',
+            hidden: true,
+            redirect: {path: '/about-me'}
+          }
+        ]
+      },
     ]
   },
   {
@@ -58,7 +104,7 @@ const routes = [
   {
     path: '*',
     hidden: true,
-    redirect: { path: '/login' }
+    redirect: {path: '/login'}
   }
 ];
 

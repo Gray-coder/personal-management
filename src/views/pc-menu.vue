@@ -19,9 +19,9 @@
   </aside>
 </template>
 <script>
-  export default{
-    mounted(){
-      console.log(this.$route.path);
+  export default {
+    mounted() {
+      //console.log(this.$route.path);
     },
     methods: {
       handleopen() {
@@ -55,9 +55,9 @@
     height: auto;
     display: none;
   }
-  aside i{
+
+  aside i {
     margin-right: 5px;
     font-size: 17px;
   }
-
 </style>
