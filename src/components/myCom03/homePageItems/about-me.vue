@@ -15,7 +15,7 @@
       }
     },
     mounted() {
-      var vm = this;
+      let vm = this;
       setInterval(() => {
         vm.getRandomImages();
       }, 5000)
@@ -34,5 +34,15 @@
   .about-me {
     width: 100%;
     height: 890px;
+  }
+  .about-me:after{
+    background-image:-webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../../../assets/overlay.png");
+    content: '';
+    display: block;
+    height: 100%;
+    left: 230px;
+    position: absolute;
+    top: 60px;
+    width: 100%;
   }
 </style>
