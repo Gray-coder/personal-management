@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <el-col :span='24' class="home">
     <el-menu class="el-menu-demo" mode="horizontal">
       <template v-for="(item,index) in $router.options.routes[1].children[0].children" v-if="!item.hidden">
         <router-link :to="item.path">
@@ -9,10 +9,10 @@
         </router-link>
       </template>
     </el-menu>
-    <div class="home-content">
+    <el-col :span="24" class="home-content">
       <router-view></router-view>
-    </div>
-  </div>
+    </el-col>
+  </el-col>
 </template>
 <script>
   export default {
@@ -26,10 +26,10 @@
   }
 </script>
 <style scoped>
-  .home,.home-content {
-    width: 100%;
-    height:100%;
+  .home, .home-content {
+    height: 100%;
   }
+
   .el-menu {
     display: flex;
     justify-content: flex-end;
@@ -40,4 +40,15 @@
   .router-link-exact-active, .router-link-active {
     background-color: #41b883;
   }
+
+  /*.home-content::after {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/overlay.png");
+    content: '';
+    display: block;
+    left: 230px;
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: 100%;
+  }*/
 </style>

@@ -19,9 +19,9 @@
 </script>
 <style scoped>
   .container {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+
   }
 </style>

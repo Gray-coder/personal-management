@@ -53,6 +53,7 @@
     line-height: 60px;
     background: #20A0FF;
     color: #fff;
+    width: 100%;
   }
 
   .userinfo {

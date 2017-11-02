@@ -27,8 +27,8 @@
 </script>
 <style scoped>
   .content-container {
-    flex:1;
-    /*padding: 20px;*/
+    width: calc(100% - 230px);
+    height: 100%;
   }
   .breadcrumb-container .title {
     width: 200px;
@@ -41,5 +41,8 @@
   .content-wrapper {
     background-color: #fff;
     box-sizing: border-box;
+  }
+  .grid-content,.content-wrapper{
+    height: 100%;
   }
 </style>
